@@ -1,0 +1,51 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #edeef0; /* Light blue background */
+    color: #222; /* Dark gray text color */
+}
+
+/* Main heading styling */
+h1 {
+    text-align: center;
+    color: #d2691e; /* Chocolate color for the main heading */
+    text-transform: uppercase;
+}
+
+/* Section heading styling */
+h2 {
+    color: #ff6347; /* Tomato red for section headings */
+    font-style: italic; /* Add a bit of flair with italics */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 10px 0;
+    color: #4b0082; /* Indigo text for the description */
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #008b8b; /* Dark cyan for the ingredients list */
+}
+
+/* Ordered list styling */
+ol {
+    padding-left: 20px;
+    color: #8b0000; /* Dark red for the method steps */
+}
+
+/* Code block styling */
+pre, code {
+    background-color: #ffffe0; /* Light yellow background for code blocks */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add a subtle border */
+    display: inline-block;
+}
