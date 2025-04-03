@@ -1,51 +1,98 @@
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #edeef0; /* Light blue background */
-    color: #222; /* Dark gray text color */
+/* ===== Base Styles ===== */
+:root {
+    --primary-color: #d2691e; /* Chocolate */
+    --secondary-color: #ff6347; /* Tomato */
+    --text-dark: #222;
+    --text-accent: #4b0082; /* Indigo */
+    --list-ingredients: #008b8b; /* Dark Cyan */
+    --list-method: #8b0000; /* Dark Red */
+    --code-bg: #ffffe0; /* Light Yellow */
+    --body-bg: #edeef0; /* Light Blue */
+    --border-radius: 5px;
 }
 
-/* Main heading styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--body-bg);
+    color: var(--text-dark);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== Typography ===== */
 h1 {
     text-align: center;
-    color: #d2691e; /* Chocolate color for the main heading */
+    color: var(--primary-color);
     text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Section heading styling */
 h2 {
-    color: #ff6347; /* Tomato red for section headings */
-    font-style: italic; /* Add a bit of flair with italics */
+    color: var(--secondary-color);
+    font-style: italic;
+    border-bottom: 2px dashed var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
-/* Paragraph styling */
 p {
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.7;
     text-align: justify;
-    margin: 10px 0;
-    color: #4b0082; /* Indigo text for the description */
+    margin: 1rem 0;
+    color: var(--text-accent);
 }
 
-/* Unordered list styling */
+/* ===== Lists ===== */
 ul {
     list-style-type: square;
-    padding-left: 20px;
-    color: #008b8b; /* Dark cyan for the ingredients list */
+    padding-left: 1.5rem;
+    color: var(--list-ingredients);
 }
 
-/* Ordered list styling */
 ol {
-    padding-left: 20px;
-    color: #8b0000; /* Dark red for the method steps */
+    padding-left: 1.5rem;
+    color: var(--list-method);
 }
 
-/* Code block styling */
+li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* ===== Code Blocks ===== */
 pre, code {
-    background-color: #ffffe0; /* Light yellow background for code blocks */
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc; /* Add a subtle border */
-    display: inline-block;
+    background-color: var(--code-bg);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    display: block;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+code {
+    display: inline;
+    padding: 0.2rem 0.4rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        text-align: left;
+    }
 }
