@@ -1,0 +1,47 @@
+body {
+    font-family: Garamond, serif;
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    font-size: medium;
+    color: #f8f4f4;
+  }
+  
+  /* Image Container Styles */
+  .image-container {
+    display: inline-block;
+    text-align: center;
+    padding: 35px;
+    font-size: 20px;
+  }
+  
+  /* General Image Styling */
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: filter 0.3s ease;
+    padding: 10px;
+  }
+  
+  /* Hover Effects */
+  .sepia:hover img {
+    filter: sepia(60%);
+  }
+  
+  .greyscale:hover img {
+    filter: grayscale(100%);
+  }
+  
+  .blur:hover img {
+    filter: blur(4px);
+  }
+  
+  /* Text Styling */
+  p {
+    font-size: 20px;
+    color: #f8f4f4;
+    text-align: center;
+  }
+  
