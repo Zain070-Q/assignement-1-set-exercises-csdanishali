@@ -1,0 +1,44 @@
+/* Set background and text */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for each image box */
+  .box {
+    border: 5px solid red;
+    padding: 20px;
+    margin: 20px;
+    width: 450px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Style for images */
+  .box img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s;
+  }
+  
+  /* Sepia filter */
+  .box:nth-of-type(1):hover img {
+    filter: sepia(100%);
+  }
+  
+  /* Grayscale filter */
+  .box:nth-of-type(2):hover img {
+    filter: grayscale(100%);
+  }
+  
+  /* Blur filter */
+  .box:nth-of-type(3):hover img {
+    filter: blur(4px);
+  }
+  
