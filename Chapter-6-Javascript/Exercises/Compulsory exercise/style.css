@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #454546; /* Light gray background */
+    text-align: center; /* Center text */
+    padding: 20px; /* Space around the content */
+}
+
+.container {
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 10px; /* Space inside the container */
+    background: #5b5959; /* White background */
+    display: inline-block; /* Fits content */
+    width: 300px; /* Fixed width for simplicity */
+}
+
+.input-group {
+    margin-bottom: 10px; /* Space between input groups */
+}
+
+label {
+    display: block; /* Place labels above inputs */
+    margin-bottom: 5px; /* Space below the label */
+    font-size: 14px; /* Small label text */
+}
+
+input {
+    width: 90%; /* Input stretches to container width */
+    padding: 5px; /* Space inside the input */
+}
+
+button {
+    margin-top: 10px; /* Space above the button */
+    padding: 7px 20px; /* Button size */
+    font-size: 14px; /* Button text size */
+}
+
+p {
+    font-size: 16px; /* Paragraph text size */
+    color: green; /* Green text color */
+    margin-top: 10px; /* Space above the paragraph */
+}

@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(to bottom, #222, #555);
+    color: white;
+    font-family: 'Courier New', monospace;
+    text-align: left; /* Changed alignment */
+    padding: 10px; /* Added padding */
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px; /* Increased size */
+    text-transform: uppercase; /* Made text all caps */
+    margin: 15px 0; /* Adjusted spacing */
+    color: #ffcc00; /* Bright yellow color */
+}
+
+#rgb-value {
+    font-size: 18px; /* Reduced size */
+    border: 2px dashed #ff6600; /* Added border with new style */
+    padding: 10px; /* Added padding */
+    background-color: #333; /* Background for contrast */
+    width: 60%; /* Defined width */
+    margin: 20px auto; /* Centered element */
+}
+
+#color-options {
+    display: grid; /* Changed to grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 15px; /* Space between grid items */
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #444; /* Added background color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.color-option {
+    width: 60px; /* Reduced size */
+    height: 60px; /* Reduced size */
+    border: 1px solid #ccc; /* Added border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Added shadow */
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Added smooth animation */
+}
+
+.color-option:hover {
+    transform: scale(1.2); /* Scales up on hover */
+    border-color: #ff6600; /* Changed border color on hover */
+}
+
+#message {
+    font-size: 16px; /* Reduced size */
+    font-style: italic; /* Italicized text */
+    margin: 10px 0; /* Reduced margin */
+    color: #33cc33; /* Bright green */
+}
+
+#score {
+    font-size: 20px; /* Increased size */
+    background: #333; /* Added background */
+    padding: 8px; /* Added padding */
+    border: 1px solid #666; /* Added border */
+    border-radius: 5px; /* Rounded edges */
+    color: #ffcc00; /* Bright yellow text */
+}
+
+#restart-btn {
+    width: auto; /* Flexible button width */
+    padding: 12px 25px; /* Adjusted padding */
+    font-family: 'Verdana', sans-serif; /* Changed font */
+    font-size: 16px; /* Changed size */
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient background */
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Added shadow */
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background: #004080; /* Uniform darker hover color */
+}
